@@ -1,0 +1,79 @@
+$bg-color: bisque;
+$highlight-color: grey;
+
+
+@mixin theme ($theme: rgb(63, 63, 63)) {
+    h1 {
+        color: $theme;
+
+    }
+    h2 {
+        color: $theme;
+    }
+    
+}
+
+
+nav {
+    box-shadow: 5px 5px 5px $highlight-color;
+}
+body {
+    background: url("../images/paper.jpg");
+    @include theme;
+}
+[class^="row"] {
+    padding: 20px;
+}
+[class^="navbar"] {
+    padding: 10px;
+}
+li:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: $highlight-color;
+}
+a:hover {
+    color: black;
+}
+h3, h5, h2{
+    padding: 20px;
+    @include theme;
+    
+}
+h1 {
+    padding: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: $bg-color;
+}
+form {
+    padding: 20px;
+}
+.btn-link:hover {
+    color: $highlight-color;
+}
+.card {
+    box-shadow: 5px 5px 5px $highlight-color;
+    margin: 5px;
+}
+.accordion {
+    padding: 20px;
+    
+}
+#navBar {
+    background-color: $bg-color;
+}
+
+#cardB {
+    background-color: $bg-color;
+}
+#navBar > .header-social-links {
+    color: pink;
+}
