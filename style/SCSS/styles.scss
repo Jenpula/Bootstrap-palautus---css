@@ -1,6 +1,6 @@
 $bg-color: bisque;
 $highlight-color: grey;
-
+$base-color: white;
 
 @mixin theme ($theme: rgb(63, 63, 63)) {
     h1 {
@@ -18,7 +18,7 @@ nav {
     box-shadow: 5px 5px 5px $highlight-color;
 }
 body {
-    background-image: url("../images/paper.jpg");
+    background-image: url("../../images/paper.jpg");
     
    
 }
@@ -57,7 +57,8 @@ h1 {
 form {
     padding: 20px;
 }
-.btn-link:hover {
+.btn:hover {
+    background-color: white;
     color: $highlight-color;
 }
 .card {
@@ -75,6 +76,14 @@ form {
 #cardB {
     background-color: $bg-color;
 }
-#navBar > .header-social-links {
-    color: pink;
+div ~ p {
+    color: $base-color;
+    margin: 10px;
+    
+}
+div + li {
+    background-color: $bg-color;
+}
+div > h1 {
+    color: $highlight-color;
 }
