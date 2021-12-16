@@ -85,7 +85,7 @@ h5 ~ p {
   text-align: center;
 }
 
-div ~ h5 {
+h5 {
   text-align: center;
 }
 
