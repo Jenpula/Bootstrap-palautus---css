@@ -1,8 +1,8 @@
 $bg-color: bisque;
-$highlight-color: grey;
+$highlight-color: rgb(94, 93, 93);
 $base-color: white;
 
-@mixin theme ($theme: rgb(63, 63, 63)) {
+@mixin theme ($theme: rgb(39, 37, 37)) {
     h1 {
         color: $theme;
 
@@ -15,7 +15,7 @@ $base-color: white;
 
 
 nav {
-    box-shadow: 5px 5px 5px $highlight-color;
+    box-shadow: 5px 5px 5px grey;
 }
 body {
     background-image: url("../../images/paper.jpg");
@@ -43,9 +43,7 @@ h3, h5, h2{
     @include theme;
     
 }
-h1 {
-    padding: 10px;
-}
+
 
 .btn {
     width: 100%;
@@ -59,10 +57,10 @@ form {
 }
 .btn:hover {
     background-color: white;
-    color: $highlight-color;
+    color: black;
 }
 .card {
-    box-shadow: 5px 5px 5px $highlight-color;
+    box-shadow: 5px 5px 5px grey;
     margin: 5px;
 }
 .accordion {
@@ -76,14 +74,19 @@ form {
 #cardB {
     background-color: $bg-color;
 }
-div ~ p {
-    color: $base-color;
-    margin: 10px;
-    
-}
-div + li {
-    background-color: $bg-color;
+
+p + h5 {
+    color: $highlight-color;
 }
 div > h1 {
     color: $highlight-color;
+    padding: 10px;
+}
+
+h5 ~ p {
+    margin: 10px;
+    text-align: center;
+}
+div ~ h5 {
+    text-align: center;
 }

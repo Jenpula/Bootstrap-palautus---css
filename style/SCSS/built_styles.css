@@ -20,7 +20,7 @@ li:hover {
 
 a {
   text-decoration: none;
-  color: grey;
+  color: #5e5d5d;
 }
 
 a:hover {
@@ -31,14 +31,10 @@ h3, h5, h2 {
   padding: 20px;
 }
 h3 h1, h5 h1, h2 h1 {
-  color: #3f3f3f;
+  color: #272525;
 }
 h3 h2, h5 h2, h2 h2 {
-  color: #3f3f3f;
-}
-
-h1 {
-  padding: 10px;
+  color: #272525;
 }
 
 .btn {
@@ -55,7 +51,7 @@ form {
 
 .btn:hover {
   background-color: white;
-  color: grey;
+  color: black;
 }
 
 .card {
@@ -75,17 +71,22 @@ form {
   background-color: bisque;
 }
 
-div ~ p {
-  color: white;
-  margin: 10px;
-}
-
-div + li {
-  background-color: bisque;
+p + h5 {
+  color: #5e5d5d;
 }
 
 div > h1 {
-  color: grey;
+  color: #5e5d5d;
+  padding: 10px;
+}
+
+h5 ~ p {
+  margin: 10px;
+  text-align: center;
+}
+
+div ~ h5 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=built_styles.css.map */
