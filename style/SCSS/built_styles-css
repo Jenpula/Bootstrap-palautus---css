@@ -31,13 +31,13 @@ h3, h5, h2 {
   padding: 20px;
 }
 h3 h2, h5 h2, h2 h2 {
-  color: #292828;
+  color: #161616;
 }
 h3 h3, h5 h3, h2 h3 {
-  color: #292828;
+  color: #161616;
 }
 h3 h5, h5 h5, h2 h5 {
-  color: #292828;
+  color: #161616;
 }
 
 .btn {
@@ -92,4 +92,4 @@ h5 {
   text-align: center;
 }
 
-/*# sourceMappingURL=built_styles.css.map */
+/*# sourceMappingURL=built_styles-css.map */
