@@ -2,19 +2,22 @@ $bg-color: bisque;
 $highlight-color: rgb(54, 50, 50);
 $base-color: white;
 
-@mixin theme ($theme: rgb(41, 40, 40)) {
-
+@mixin theme ($theme: rgb(80, 78, 78)) {
+    color: $theme;
     h2 {
-        color: $theme;
-    }
-    h3 {
         color: $theme;
     }
     h5 {
         color: $theme;
     }
+    
 }
 
+h5, h2{
+    padding: 20px;
+    @include theme;
+    
+}
 
 nav {
     box-shadow: 5px 5px 5px grey;
@@ -39,11 +42,6 @@ a {
 }
 a:hover {
     color: black;
-}
-h3, h5, h2{
-    padding: 20px;
-    @include theme;
-    
 }
 
 
@@ -91,4 +89,5 @@ h5 ~ p {
 }
 h5 {
     text-align: center;
+    padding: 20px;
 }
